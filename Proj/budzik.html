@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock App</title>
+  <link rel="stylesheet" href="budzik.css">
+</head>
+<body onload="updateTime()">
+      <div class="container">
+      <h1>Alarm Clock</h1>
+      <div id="clock"></div>
+      <div class="alarm-form">
+        <label for="alarm-time"><h5>Godzina:</h5></label>
+        <input type="time" id="alarm-time">
+        <label for="alarm-date"><h5>Data:</h5></label>
+        <input type="date" id="alarm-date">
+        <label for="alarm-repeat"><h5>Powtarzaj:</h5></label>
+        <select id="alarm-repeat">
+          <option value="codziennie">Codziennie</option>
+          <option value="co tydzien">Co tydzień</option>
+          <option value="raz">Raz</option>
+        </select>
+        <div class="buttons-container">
+          <button onclick="setAlarm()">Ustaw alarm</button>
+          <a href="alarmy.html" target="_blank"><button>Zobacz alarmy</button></a>
+        </div>
+        
+
+      </div>
+      <div id="alarms-list" class="alarms-list">
+        <!-- Lista alarmów będzie tutaj -->
+      </div>
+    </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Wake up! Alarm!</p>
+    </div>
+  </div>
+
+  <script src="budzik.js"></script>
+</body>
+</html>

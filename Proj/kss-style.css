@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .alarm-form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #alarm-time, select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .buttons-container {
+    display: flex;
+   justify-content: center;
+   gap: 10px;
+  }
+  
+  
+  button {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .alarms-list {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  /* Dodatkowy styl dla modala */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .alarm-form{
+    text-align: center;
+  }
+
+  #alarm-date{
+    width: 100px;
+    height: 50px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .clock{
+    text-align: center;
+    font-size: large;
+  }
+
+  /* Zapytanie media dla urządzeń o szerokości mniejszej niż 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px; /* Zmniejszenie paddingu dla kontenera */
+  }
+
+  /* Dostosowanie szerokości elementów formularza */
+  .alarm-form select,
+  .alarm-time,
+  .alarm-date,
+  .alarm-form button {
+    padding: 0.5rem;
+    width: 100%; /* Pełna szerokość dla małych ekranów */
+    flex-direction: column; /* Zmiana kierunku układu na kolumnowy dla elementu ul w nawigacji */
+    align-items: center; /* Wyśrodkowanie elementów nawigacji na małych ekranach */
+    text-align: center;
+  }
+}
